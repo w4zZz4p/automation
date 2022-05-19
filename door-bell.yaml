@@ -1,12 +1,12 @@
 substitutions:
-  device_name: "skambaliukas"
+  device_name: "door-bell"
   wifi_ssid: !secret wifi_ssid
   wifi_password: !secret wifi_password
+  hotspot_password: !secret hotspot_password
 
 packages:
   common: github://w4zZz4p/automation/packages/common.yaml@master
   wifi-signal: github://w4zZz4p/automation/packages/wifi-signal.yaml@master
-
 
 esp8266:
   board: nodemcuv2

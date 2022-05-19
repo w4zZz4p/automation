@@ -14,8 +14,8 @@ wifi:
   password: ${wifi_password}
 
   ap:
-    ssid: "Skambaliukas Fallback Hotspot"
-    password: "uJn4Dr6r7BUv"
+    ssid: "${device_name} hotspot"
+    password: ${hotspot_password}
 
 captive_portal:
 
