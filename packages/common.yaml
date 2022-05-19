@@ -1,0 +1,23 @@
+esphome:
+  name: ${device_name}
+
+web_server:
+  port: 80
+
+logger:
+
+ota:
+  password: ""
+
+wifi:
+  ssid: ${wifi_ssid}
+  password: ${wifi_password}
+
+  ap:
+    ssid: "Skambaliukas Fallback Hotspot"
+    password: "uJn4Dr6r7BUv"
+
+captive_portal:
+
+mqtt:
+  broker: broker.hivemq.com
