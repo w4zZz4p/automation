@@ -20,4 +20,4 @@ wifi:
 captive_portal:
 
 mqtt:
-  broker: broker.hivemq.com
+  broker: ${mqtt_broker}
