@@ -7,7 +7,7 @@ substitutions:
 
 packages:
   common: github://w4zZz4p/automation/packages/common.yaml@master
-  sensor-wifi-signal: github://w4zZz4p/automation/packages/sensors/wifi-signal.yaml@master
+  sensor-wifi-signal: github://w4zZz4p/automation/packages/sensors/wifi-data.yaml@master
 
 esp8266:
   board: nodemcuv2

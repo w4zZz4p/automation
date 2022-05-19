@@ -1,0 +1,15 @@
+sensor:
+  - platform: wifi_signal
+    name: "WiFi Signal Sensor"
+    update_interval: 15s
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "${device_name} IP Address"
+    ssid:
+      name: "${device_name} Connected SSID"
+    bssid:
+      name: "${device_name} Connected BSSID"
+    mac_address:
+      name: "${device_name} Mac Wifi Address"
