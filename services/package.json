@@ -1,0 +1,16 @@
+{
+  "name": "autom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "z2m": "zigbee2mqtt",
+    "red": "node-red"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-red": "^2.2.2",
+    "zigbee2mqtt": "^1.25.1"
+  }
+}

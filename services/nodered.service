@@ -1,0 +1,15 @@
+[Unit]
+Description=NodeRED
+After=network.target
+
+[Service]
+ExecStart=/home/justas/automation/node_modules/.bin/node-red
+WorkingDirectory=/home/srvc/automation
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+RestartSec=60s
+User=justas
+
+[Install]
+WantedBy=multi-user.target
