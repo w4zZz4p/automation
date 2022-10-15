@@ -1,0 +1,32 @@
+substitutions:
+  device_name: "temperature"
+  wifi_ssid: !secret wifi_ssid
+  wifi_password: !secret wifi_password
+  hotspot_password: !secret hotspot_password
+  mqtt_broker: "broker.hivemq.com"
+
+esp8266:
+  board: nodemcuv2
+
+packages:
+  common: !include packages/common.yaml
+  sensor-wifi-signal: !include packages/sensors/wifi-data.yaml
+  ds18b20-0: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 0 } }
+  ds18b20-1: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 1 } }
+  ds18b20-2: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 2 } }
+  ds18b20-3: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 3 } }
+  ds18b20-4: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 4 } }
+  ds18b20-5: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 5 } }
+  ds18b20-6: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 6 } }
+  ds18b20-7: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 7 } }
+  ds18b20-8: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 8 } }
+  ds18b20-9: !include { file: packages/sensors/ds18b20.yaml, vars: { index: 9 } }
+
+
+globals:
+  - id: "sensor_names"
+    type: std::map<std::string, std::string>
+
+dallas:
+  - pin: D0
+    update_interval: 10s

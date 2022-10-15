@@ -1,0 +1,11 @@
+sensor:
+  - platform: wifi_signal
+    name: "wifi signal"
+    update_interval: 30s
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "IP address"
+    mac_address:
+      name: "MAC address"

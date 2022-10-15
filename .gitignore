@@ -3,4 +3,4 @@
 # You can modify this file to suit your needs.
 /.idea
 /.esphome/
-/esphome/secrets.yaml
+/devices/secrets.yaml
