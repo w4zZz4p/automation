@@ -1,0 +1,9 @@
+sensor:
+  - platform: dallas
+    id: dallas${index}
+    index: ${index}
+    resolution: 11
+    filters:
+      - filter_out: nan
+    on_value:
+      - lambda: temperature::handle_sensor_value(id(dallas${index}), id(mqtt_client));
